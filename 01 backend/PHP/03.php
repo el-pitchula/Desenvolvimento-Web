@@ -1,0 +1,5 @@
+----- arrays:
+
+----- concatenação:
+
+----- operações matemáticas:
