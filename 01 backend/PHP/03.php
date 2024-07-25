@@ -10,6 +10,7 @@
         echo '<div style="width:100px;height:100px;backgouund:red;"></div>';
         //esse resultado é um quadrado vermelho
         //é possível implementar html tranquilamente
+        //tb é possível selecionar paginas html completas c if else
     }
 ?>
 
