@@ -1,3 +1,5 @@
+! sempre rodar com o servidor ligado no xampp !
+
 ----- malipulação de variáveis no php:
 
 <?php
@@ -11,8 +13,21 @@
 
 ----- criação de variáveis:
 
------ tipos de variáveis:
+<?php
+    $nome = 'João'; //cria variável
+    echo 'meu nome é <br />'; //"print"
+    echo $nome; //mostra a variável no navegador
+
+    $idade = 23;
+    echo $idade;
+
+    $bool = true; //1
+    $double = 10.09;
+?>
 
 ----- constantes:
 
-
+<?php
+    define('NOME','João');
+    echo NOME;
+?>
