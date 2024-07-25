@@ -31,5 +31,3 @@
 - HostGator: site onde é possivel comprar para ter um domínio principal
 
 - CPanel: gerencia contas e banco de dados
-
-- 
