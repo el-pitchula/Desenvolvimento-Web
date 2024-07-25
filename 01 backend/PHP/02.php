@@ -1,4 +1,5 @@
-! sempre rodar com o servidor ligado no xampp !
+! sempre rodar com o servidor (Apache) ligado no XAMPP !
+! os códigos são feitos no Sublime text !
 
 ----- malipulação de variáveis no php:
 
@@ -37,9 +38,29 @@
 
 ----- arrays (variável com vários valores):
 
-
+<?php
+    $nome = array('João','Ana','Felipe');
+    echo $nome[2]; //Felipe
+    //ou:
+    $variaveis = ['João',32,true,10.09];
+    echo $variaveis[2]; //mostra "1"
+?>
 
 ----- concatenação:
 
+<?php
+    $idade = 23;
+    define('N0ME','João');
+    echo 'meu nome é '.NOME.'tenho '.$idade;
+    //ou:
+    echo "tenho $idade";
+?>
+
 ----- operações matemáticas:
 
+<?php
+    $expressao = 10 + 20 * 2;
+    echo $expressão; //50 
+    //ele segue a ordem padrão de resolução matemática 
+    //assim como o vem em () é resolvido primeiro
+?>
