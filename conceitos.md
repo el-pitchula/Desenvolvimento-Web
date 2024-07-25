@@ -28,4 +28,8 @@
 
 - notepad: é um editor de texto e de código fonte de código aberto sob a licença GPL (Licença Pública Geral). Suporta várias linguagens de programação rodando sob o sistema Microsoft Windows
 
+- HostGator: site onde é possivel comprar para ter um domínio principal
+
+- CPanel: gerencia contas e banco de dados
+
 - 
