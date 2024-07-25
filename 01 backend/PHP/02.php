@@ -30,4 +30,7 @@
 <?php
     define('NOME','João');
     echo NOME;
+    
+    //constantes são utilizadas para se definir uma vez (n é alterável), como o domínio por exemplo:
+    define('DOMINIO','http://meudominio.com'); // 'nome do domínio', 'localhost (endereço)'
 ?>
