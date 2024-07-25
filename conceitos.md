@@ -18,6 +18,6 @@
 
 - Sublime text: é um editor de código-fonte, multi-plataforma e shareware com uma API para Python
 
-- XAMPP:  é um pacote com os principais servidores de código aberto, incluindo FTP, banco de dados MySQL e Apache com suporte a PHP É um método que torna extremamente fácil para os desenvolvedores a criar um servidor web local para fins de teste (possui muitos aplicativos como o Apache, MySQL, phpMyAdmin, FileZilla FTP Server e OpenSSL.)
+- XAMPP:  é um pacote com os principais servidores de código aberto, incluindo FTP, banco de dados MySQL e Apache com suporte a **PHP** É um método para criar um servidor web local para fins de teste (possui muitos aplicativos como o Apache, MySQL, phpMyAdmin, FileZilla FTP Server e OpenSSL.)
 
 - 
