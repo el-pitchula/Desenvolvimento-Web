@@ -100,3 +100,11 @@
 <?php
     include('footer.php'); //rodapé do site
 ?>
+
+----- Switch, continue e break:
+
+<?php
+
+?>
+
+----- Manipulação de arrays:
