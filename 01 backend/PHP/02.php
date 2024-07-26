@@ -1,5 +1,6 @@
 ! sempre rodar com o servidor (Apache) ligado no XAMPP !
 ! os códigos são feitos no Sublime text !
+----- PHP BÁSICO -----
 
 ----- malipulação de variáveis no php:
 
@@ -63,4 +64,50 @@
     echo $expressão; //50 
     //ele segue a ordem padrão de resolução matemática 
     //assim como o vem em () é resolvido primeiro
+?>
+
+----- condições:
+
+<?php
+    $var1 = 'João';
+    $var2 = 'Ana';
+
+    if($var1 == $var2){
+        echo 'são iguais';
+    }else{
+        echo '<div style="width:100px;height:100px;backgouund:red;"></div>';
+        //esse resultado é um quadrado vermelho
+        //é possível implementar html tranquilamente
+        //tb é possível selecionar paginas html completas c if else
+    }
+?>
+
+----- loopings:
+
+For:
+<?php
+    // $contador=10; $contador>0; $contador--  de 10 a 0 (decrescente pois contador é --)
+    for($contador=0;$contador<10;$contador++){ //de 0 a 10 em ordem crescente (++)
+        echo 'Hi';
+        echo '<hr>';
+    }
+?>
+
+While:
+<?php
+    $contador = 0;
+    while($contador < 10){
+        echo 'Hi';
+        echo '<hr>';
+    }
+?>
+
+Do while:
+<?php
+    $contador = 0;
+    do{
+        echo 'Hi';
+        echo '<br />';
+        $contador++;
+    }while($contador < 10);
 ?>
