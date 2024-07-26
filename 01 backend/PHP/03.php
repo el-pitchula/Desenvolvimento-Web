@@ -82,7 +82,21 @@
 ?>
 
 ----- Include e Date (funções nativas):
+! sempre consultar a documentação quando se trata de funções !
 
 <?php
+ date_default_timezone_set('America/Sao_paulo'); //fuso horário
+ $data = date('d/m/Y H:i:s',time()+(60*10));
+ echo $data;
 
+ include('header.php'); //incluir este arquivo ("cabeçalho")
+ //(ou seja é necessário ter ou criá-lo para chamar)
+?>
+
+<h1> Home </h1> 
+//para lembrar que ele pode estar inserido em um html tmb, n só chamar outro arquivo fora
+//ou seja, podem ser feitos vários "<?php?>" no mesmo arquivo:
+
+<?php
+    include('footer.php'); //rodapé do site
 ?>
