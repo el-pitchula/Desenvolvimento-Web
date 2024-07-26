@@ -47,7 +47,7 @@
     echo $arr2[0]['chave1'];
 ?>
 
------ Sleep e Die
+----- Sleep e Die:
 
 <?php
     //a função sleep é uma espécie de temporizador
@@ -66,10 +66,23 @@
     //assim o restante do código não roda mais
 ?>
 
------ Funções nativas
+----- Criando funções:
+
+<?php
+    function calculadora($numero1 = 10,$numero2 = 5){
+        echo ($numero1+$numero2);
+    }
+    calculadora();
+    //15
+
+    function retornarString(){
+        return 'João';
+    }
+    echo retornarString();
+?>
+
+----- Include e Date (funções nativas):
 
 <?php
 
 ?>
-
------ Criando funções
