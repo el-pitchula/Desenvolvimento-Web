@@ -84,7 +84,7 @@
 
 ----- loopings:
 
-For:
+- For:
 <?php
     // $contador=10; $contador>0; $contador--  de 10 a 0 (decrescente pois contador é --)
     for($contador=0;$contador<10;$contador++){ //de 0 a 10 em ordem crescente (++)
@@ -93,7 +93,7 @@ For:
     }
 ?>
 
-While:
+- While:
 <?php
     $contador = 0;
     while($contador < 10){
@@ -102,7 +102,7 @@ While:
     }
 ?>
 
-Do while:
+- Do while:
 <?php
     $contador = 0;
     do{
