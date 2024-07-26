@@ -46,3 +46,30 @@
     $arr2[0]['chave1'] = 'João';
     echo $arr2[0]['chave1'];
 ?>
+
+----- Sleep e Die
+
+<?php
+    //a função sleep é uma espécie de temporizador
+    sleep(3); //3 segundos
+    echo 'um';
+    sleep(3);
+    echo 'dois';
+
+    //a função die é um "stop"
+    $nome = 'João';
+    if($nome == 'Ana'){
+        echo 'tudo certo';
+    }else{
+        die("O script parou de ser executado  ");
+    }
+    //assim o restante do código não roda mais
+?>
+
+----- Funções nativas
+
+<?php
+
+?>
+
+----- Criando funções

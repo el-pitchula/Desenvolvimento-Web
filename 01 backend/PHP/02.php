@@ -1,5 +1,7 @@
 ! sempre rodar com o servidor (Apache) ligado no XAMPP !
 ! os códigos são feitos no Sublime text !
+! sempre consultar a documentação oficial !
+
 ----- PHP BÁSICO -----
 
 ----- malipulação de variáveis no php:
@@ -34,7 +36,7 @@
     echo NOME;
 
     //constantes são utilizadas para se definir uma vez (n é alterável), como o domínio por exemplo:
-    define('DOMINIO','http://meudominio.com'); // 'nome do domínio', 'localhost (endereço)'
+    define('DOMINIO','http://meudominio.com'); //'nome do domínio', 'localhost (endereço)'
 ?>
 
 ----- arrays (variável com vários valores):
@@ -86,7 +88,7 @@
 
 - For:
 <?php
-    // $contador=10; $contador>0; $contador--  de 10 a 0 (decrescente pois contador é --)
+    // $contador=10; $contador>0; $contador--  //de 10 a 0 (decrescente pois contador é --)
     for($contador=0;$contador<10;$contador++){ //de 0 a 10 em ordem crescente (++)
         echo 'Hi';
         echo '<hr>';
