@@ -34,5 +34,15 @@
 ----- Array multidimencional:
 
 <?php
-    
+    //arrays single:
+    $arr = ['João','Ana'];
+    $arr = array('João','chave2'=>'Ana');
+    $arr[0] = 'João';
+    $arr[] = 'Ana';
+
+    //versão arrays multidimencionais:
+    $arr2 = array(array('João','Ana'),array(23,45));
+    $arr2[0] = array('chave1'=>'João','Ana');
+    $arr2[0]['chave1'] = 'João';
+    echo $arr2[0]['chave1'];
 ?>
