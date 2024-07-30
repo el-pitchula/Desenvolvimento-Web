@@ -121,7 +121,12 @@
 - Para exercer a função de For:
 
 <?php
-
+    for($i = 0; $i < 10; $i++){
+        echo $i;
+        echo '<hr>';
+        if($i == 5)
+            break; //quando chegar no 5 ele para de contar
+    }
 ?>
 
 ----- Manipulação de arrays:
