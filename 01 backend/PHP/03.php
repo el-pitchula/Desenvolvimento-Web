@@ -101,7 +101,24 @@
     include('footer.php'); //rodapé do site
 ?>
 
------ Switch, continue e break:
+----- Switch case (trocar caso), continue e break 
+
+- Para exercer a função de if else:
+
+<?php
+    $nome = 'João';
+    switch($nome){
+        case 'João':
+            echo 'a var é joão';
+            break;
+        case 'Ana':
+            echo 'a var é Ana';
+            break;
+    }
+    //a var é joão
+?>
+
+- Para exercer a função de For:
 
 <?php
 

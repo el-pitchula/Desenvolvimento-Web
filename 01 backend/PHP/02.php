@@ -68,7 +68,7 @@
     //assim como o vem em () é resolvido primeiro
 ?>
 
------ condições:
+----- condições if else (se então):
 
 <?php
     $var1 = 'João';
