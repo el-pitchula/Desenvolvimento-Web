@@ -1,0 +1,56 @@
+----- Formulários, GET e POST
+ex1.:
+
+<?php
+    echo '<form>
+        <input type="text" />
+    <form>';
+?>
+
+ex2.:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulário</title>
+</head>
+<body>
+
+    <?php
+    /*
+    if(isset($_GET['acao'])){
+        $nome = @$_GET['nome'];
+        $email = @$_GET['email'];
+        echo $nome;
+        echo '<br />';
+        echo $email;
+    }
+    */
+
+    if(isset($_POST['acao'])){
+        $nome = @$_POST['nome'];
+        $email = @$_POST['email'];
+        echo $nome;
+        echo '<br />';
+        echo $email;
+    }
+
+    ?>
+    <form method="post">
+        <input type="text" name="nome" />
+        <input type="text" name="email" />
+        <input type="submit" name="acao" value="Enviar" />
+    </form>
+
+/*
+<form action="exemplo.php" method="get">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome"><br><br>
+    <label for="idade">Idade:</label>
+    <input type="number" id="idade" name="idade"><br><br>
+    <button type="submit">Enviar</button>
+</form>
+*/
+
+</body>
+</html>

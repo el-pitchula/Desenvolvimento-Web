@@ -129,4 +129,25 @@
     }
 ?>
 
+<?php
+    for($i = 0; $i < 10; $i++){
+        if($i == 5)
+            continue;
+        echo $i;
+        echo '<hr>';
+    }
+    /* 
+    0
+    1
+    2
+    3
+    4 //pula o 5
+    6
+    7
+    8
+    9
+    */
+?>
+
 ----- Manipulação de arrays:
+! existem várias funções com exemplos na documentação ofc !
