@@ -109,6 +109,29 @@
 quando o usuário fecha a aba do navegador, quando volta nela, a
 variável permanece guardada, só é destruída quando o usuário fecha
 o navegador.
+    - em todo site são usados sessões para fazer validação de login
+
+----- index.php
+<?php
+    session_start();
+    $_SESSION['nome'] = 'João';
+?>
+
+----- index2.php
+<?php
+    session_start();
+    //if(isset($_SESSION['nome'])){  //para verificar se uma sessão existe
+        echo $_SESSION['nome'];
+        //unset($_SESSION['nome']);  //limpa sessão da memória
+        //session_destroy();  //destrói/apaga a sessão
+    }
+?>
+
+resposta:
+localhost/caminho/index2.php
+    João
+
 - Cookies são quando criamos uma variável e determinamos o tempo
 em que ela ficará armazenada no computador do usuário.
+
 
