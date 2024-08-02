@@ -1,4 +1,7 @@
 ----- PHPOO (Orientado a Objeto) ou OOP -----
+- é uma prática comum criar uma pasta "classe" apenas para 
+armazenar os objetos criados em arquivos separados e serem
+chamados no index.php (a "main")
 
 <?php
     class Pessoa { //obj pessoa {atributos}
