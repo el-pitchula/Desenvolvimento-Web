@@ -1,12 +1,13 @@
------ Formulários, GET e POST
-ex1.:
+Formulários, GET e POST
+
+----- Ex1.:
 <?php
     echo '<form>
         <input type="text" />
     <form>';
 ?>
 
-ex2.:
+----- Ex2.:
 <!DOCTYPE html>
 <html>
 <head>
@@ -51,7 +52,7 @@ ex2.:
 </body>
 </html>
 
-ex2.: calculadora
+----- Ex3.: calculadora
 <!DOCTYPE html>
 <html>
 <head>
@@ -66,6 +67,37 @@ ex2.: calculadora
     <form method="post">
         <input type="text" name="numero1" />
         <input type="text" name="numero2" />
+        <input type="submit" name="acao" value="Enviar" />
+    </form>
+</body>
+</html>
+
+----- Ex4.: select e checkbox
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulário</title>
+</head>
+<body>
+    <?php
+        if(isset($_POST['acao'])){
+            foreach ($_POST['valor'] as $key => $value){
+                echo $key;
+                echo '=>';
+                echo $value;
+                echo '<hr>';
+            }
+        }
+    ?>
+    <form method="post">
+        <select name="nome">
+            <option value="João">João</option>
+            <option value="Ana">Ana</option>
+        </select>
+        <input type="checkbox" name="valor[]" value="10">10
+        <input type="checkbox" name="valor[]" value="20">20
+        <input type="checkbox" name="valor[]" value="30">30
+        <input type="checkbox" name="valor[]" value="40">40
         <input type="submit" name="acao" value="Enviar" />
     </form>
 </body>
