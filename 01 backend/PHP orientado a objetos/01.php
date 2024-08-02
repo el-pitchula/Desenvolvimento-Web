@@ -29,4 +29,15 @@ chamados no index.php (a "main")
 
 ----- Final class, heranças, protected
 
-
+<?php
+    final class Filha{
+        public function mostrarOla(){
+            echo 'Olá';
+        }
+    }
+    class Pai{
+        public function mostrarTchau(){
+            echo 'Tchau';
+        }
+    }
+?>
