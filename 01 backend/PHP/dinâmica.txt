@@ -1,4 +1,4 @@
-Formulários, GET e POST
+----- Formulários, GET e POST ------
 
 ----- Ex1.:
 <?php
@@ -102,3 +102,13 @@ Formulários, GET e POST
     </form>
 </body>
 </html>
+
+----- Sessões e cookies -----
+
+- Sessões são quando armazenamos um valor em um variável q msm
+quando o usuário fecha a aba do navegador, quando volta nela, a
+variável permanece guardada, só é destruída quando o usuário fecha
+o navegador.
+- Cookies são quando criamos uma variável e determinamos o tempo
+em que ela ficará armazenada no computador do usuário.
+
