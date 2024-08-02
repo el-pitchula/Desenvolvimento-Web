@@ -105,7 +105,7 @@
 
 ----- Sessões e cookies -----
 
-- Sessões são quando armazenamos um valor em um variável q msm
+- SESSÕES são quando armazenamos um valor em uma variável q msm
 quando o usuário fecha a aba do navegador, quando volta nela, a
 variável permanece guardada, só é destruída quando o usuário fecha
 o navegador.
@@ -131,7 +131,25 @@ resposta:
 localhost/caminho/index2.php
     João
 
-- Cookies são quando criamos uma variável e determinamos o tempo
+- COOKIES são quando criamos uma variável e determinamos o tempo
 em que ela ficará armazenada no computador do usuário.
 
+----- index.php
+<?php
+    session_start();
+    setcookie('nome','João',time() + 60,'/');  
+    //nome, valor, tempo(s), path ('/' acessível para todas a paginas)
+    //"time() + 60" é o dia de hj +60 segundos
+    //para destruir(expirar) o cookie basta tornar "-"
+    echo $_COOKIE['nome'];
+?>
 
+----- index2.php
+<?php
+    session_start();
+    //if(isset($_SESSION['nome'])){  //para verificar se uma sessão existe
+        echo $_SESSION['nome'];
+        //unset($_SESSION['nome']);  //limpa sessão da memória
+        //session_destroy();  //destrói/apaga a sessão
+    }
+?>
