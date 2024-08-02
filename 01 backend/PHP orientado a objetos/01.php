@@ -24,6 +24,9 @@ chamados no index.php (a "main")
     // estou comendoestou crescendo
 ?>
 
------ Public, private e static
+// além de public e private, tem o método estático q vem do public
+// funciona como um congelamento
+
+----- Final class, heranças, protected
 
 
