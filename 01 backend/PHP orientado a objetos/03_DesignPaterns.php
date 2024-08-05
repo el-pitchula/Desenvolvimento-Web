@@ -55,6 +55,7 @@
     }
     $loja = new Loja();
     $loja->finalizarCompra();
+    //carrinho fechado
 ?>
 
 - Singleton Pattern (único)
