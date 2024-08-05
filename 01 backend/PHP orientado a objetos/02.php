@@ -108,7 +108,7 @@
             namespace Home;
             class Inicial{
                 function __construct(){
-                    echo
+                    echo 'classe inicial chamada com sucesso';
                 }
             }
         ?>
@@ -122,4 +122,12 @@
     }
     spl_autoload_register('myAutoLoad'); //chama a automatização
     new Utilidades();
+    //classe inicial chamada com sucesso
+    //é mais oganizado criar um arquivo 'config.php' com as função de autoload
+?>
+
+----- Constants em Orientação ao Objeto
+
+<?php
+    class minha
 ?>
