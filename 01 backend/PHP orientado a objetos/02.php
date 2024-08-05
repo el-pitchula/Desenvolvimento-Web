@@ -126,8 +126,14 @@
     //é mais oganizado criar um arquivo 'config.php' com as função de autoload
 ?>
 
------ Constants em Orientação ao Objeto
+----- Constantes em Orientação ao Objeto
 
 <?php
-    class minha
+    class minhaClasse{
+        const VALOR = 300;
+        public function __construct(){
+            echo self::VALOR;
+        }
+    }
+    echo minhaClasse::VALOR;
 ?>
