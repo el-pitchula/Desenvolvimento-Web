@@ -3,6 +3,8 @@
 armazenar os objetos criados em arquivos separados e serem
 chamados no index.php (a "main")
 
+----- Classes
+
 <?php
     class Pessoa { //obj pessoa {atributos}
         private $nome = 'João';
@@ -88,6 +90,8 @@ chamados no index.php (a "main")
     // chamando função teste
 ?>
 
+! falar mais sobre o funcionamento do protected !
+
 ----- Abstract, self...
 - abstract é uma classe q só pode ser herdada, n pode ser instanciada
 (é apenas para ser chamada)
@@ -138,4 +142,5 @@ o certo seria apenas chamá-la:
 
     $principal = new Principal;
     $principal->funcao();
+    // metodo estático
 ?>
