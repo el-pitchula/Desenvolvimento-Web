@@ -92,4 +92,34 @@
 - é sobre como incluir dinamicamente as classes em projetos
 (para evitar incluir manualmente as classes em cada arquivo)
 
+- \classes\
+    - Utilidades.php
+    <?php
+    class Utilidades{
+        function __construct(){
+            echo
+        }
+    }
+    ?>
 
+    - \Home\
+        - inicial.php
+        <?php
+            namespace Home;
+            class Inicial{
+                function __construct(){
+                    echo
+                }
+            }
+        ?>
+
+- index.php
+<?php
+    function myAutoLoad($class){
+        if(file_exists('classes/'.$class.'.php')){ //teste para verificar se a pasta existe
+            include('classes/'.$class.'.php');
+        }
+    }
+    spl_autoload_register('myAutoLoad'); //chama a automatização
+    new Utilidades();
+?>
