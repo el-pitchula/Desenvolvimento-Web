@@ -66,7 +66,24 @@
     $pdo = new PDO('mysql:host=localhost;dbname=nomedapastacomosarquivosdeBD','root','');
     $id = 3  //para poder atualizar o id 3 (terceiro registo no BD)
     //tmb é possível alterar na URL (endereço do site) com GET
-    $sql = $pdo->prepare();
+    $sql = $pdo->prepare("UPDATE `clientes` SET nome='Mario',sobrenome='Da Silva' WHERE id=$id");
+    //WHERE é quem especifica o id, sem ele seria aplicado para todos os ids
+    //ou:
+    //$sql = $pdo->prepare("UPDATE `clientes` SET nome='João',sobrenome='Sousa' WHERE nome='Mario' AND sobrenome='Da Silva'");
+    //substitui Mario Da Silva por João Sousa
+    if($sql->execute()){
+        echo 'cliente foi atualizado com sucesso!';
+    }
 ?>
 
 ----- DELETE (para deletar um registro do BD)
+
+<?php
+    $pdo = new PDO('mysql:host=localhost;dbname=nomedapastacomosarquivosdeBD','root','');
+    $id = 5;
+    $sql = $pdo->prepare("DELETE FROM `clientes` WHERE id=?"); //basta colocar id=5 se for um único registro
+    //mas com essa técnica de manipulação é mais seguro (? e array na execução)
+    if($sql->execute(array($id))){
+        echo 'cliente foi deletado com sucesso!';
+    }
+?>
