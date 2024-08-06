@@ -1,4 +1,4 @@
------ SELECT ()
+----- SELECT (ferramenta de seleção de elementos para manipulação dos dados da tab)
 - neste exemplo foi criado outros dois BD "posts" e "categorias" 
 (esse projeto está sendo pensado como se fosse um blog) no phpAdmin, 
 dentro da pasta do projeto em questão com o outro BD "clientes"
@@ -72,4 +72,10 @@ criado anteriormente
             echo '<hr>';
         }
     }
+?>
+
+- queries mais avançadas: INNER JOIN ()
+
+<?php
+
 ?>
