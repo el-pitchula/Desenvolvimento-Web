@@ -14,6 +14,7 @@
 ?>
 
 - Insert PDO (para inserir)
+    - sobre a importação do BD
 <?php
     $pdo = new PDO('mysql:host=localhost;dbname=nomedapastacomosarquivosdeBD','root','');
     $sql = $pdo->prepare("INSERT INTO `clientes` VALUES (null,'João','Pedro','2017-05-09
@@ -22,17 +23,20 @@
     $sql->execute(); //executa a query, no caso, irá inserir os dados no BD do phpAdmin
 ?>
 
+    - completo:
 <?php
+    date_default_timezone_set('America/Sao_Paulo');
     $pdo = new PDO('mysql:host=localhost;dbname=nomedapastacomosarquivosdeBD','root','');
 
     if(isset($_POST['acao'])){
         $nome = $_POST['nome'];
         $sobrenome = $_POST['sobrenome'];
-        $momento_registro = $_POST['momento_registro'];
+        $momento_registro = date('Y-m-d H:i:s');  // $_POST['momento_registro'];
 
         $sql = $pdo->prepare("INSERT INTO `clientes` VALUES (null,?,?,?)"); //hr atual
 
-        $sql->execute();
+        $sql->execute(array($nome,$sobrenome,$momento_registro)); //para executar os dados em "?,?,?"
+        //é uma forma de validação por questão de segurança (estudar sobre ataque hacker em BD)
         echo 'cliente inserido com sucesso!';
     }
 ?>
@@ -43,19 +47,17 @@
     <title>Cadastro no banco</title>
 </head>
 <body>
-    <form method="post"> //formulário
-        <input type="text" name="nome" required />
+    <form method="post"> <!--formulário -->
+        <input type="text" name="nome" required />  <!--required obriga a preencher o campo -->
         <input type="text" name="sobrenome" required />
-        <input type="datetime-local" name="momento_registro" required />
-//ou
-    <form action="" method="post">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome"><br><br>
-        <label for="sobrenome">Sobrenome:</label>
-        <input type="text" id="sobrenome" name="sobrenome"><br
-        <label for="momento_registro">Momento de Registro:</label>
-        <input type="datetime-local" id="momento_registro" name="momento_registro"><
-        <input type="submit" name="acao" value="Inserir">
-
+        <!-- <input type="datetime-local" name="momento_registro" required /> -->
+        <input type="submit" name="acao" value="Enviar" />
+    </form>
 </body>
 </html>
+
+- quando os dados forem inseridos no localhost será guardado no BD
+
+----- UPDATE e condições nas queries -----
+
+
