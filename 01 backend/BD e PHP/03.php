@@ -34,6 +34,5 @@
 ?>
 
 ----- Pesquisa avançada com LIKE
-- sobre pesquisalção em banco de dados
 
 ----- IN e BETWEEN

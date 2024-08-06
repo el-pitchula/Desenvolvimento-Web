@@ -90,4 +90,4 @@ criado anteriormente
     }
 ?>
 
-- queries mais avançadas: JOIN (introduzir em exemplos mais avançados)
+----- queries mais avançadas: JOIN (introduzir em exemplos mais avançados)
