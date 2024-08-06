@@ -89,5 +89,3 @@ criado anteriormente
         echo '<hr>';
     }
 ?>
-
------ queries mais avançadas: JOIN (introduzir em exemplos mais avançados)
