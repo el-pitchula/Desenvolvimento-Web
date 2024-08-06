@@ -63,5 +63,10 @@
 
 ----- UPDATE (para atualizar um registro já inserido no BD)
 <?php
-
+    $pdo = new PDO('mysql:host=localhost;dbname=nomedapastacomosarquivosdeBD','root','');
+    $id = 3  //para poder atualizar o id 3 (terceiro registo no BD)
+    //tmb é possível alterar na URL (endereço do site) com GET
+    $sql = $pdo->prepare();
 ?>
+
+----- DELETE (para deletar um registro do BD)
