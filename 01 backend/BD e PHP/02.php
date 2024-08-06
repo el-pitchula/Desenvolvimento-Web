@@ -15,21 +15,61 @@ criado anteriormente
     $sql->execute()
     $info = $sql->fetchAll(); //fetchAll pega tds as informações def em $sql
 
+    //puxando os dados da tabela (mostra no localhost tds as info (apenas uma prévia)):
     echo '<pre>';
     print_r($info);
     echo '</pre>';
-    //mostra no localhost tds as informações (apenas uma prévia)
+    //mais legível:
+    foreach ($info as $key => $value){
+        echo 'Título: '.$value['titulo'];
+        echo '<br />';
+        echo 'Notícia: '.$value['conteudo'];
+        echo '<hr>';
+    }
+    //ou
+    for($i = 0; $i < count($info); %i++){
+        echo 'Título: '.$info[$i]['titulo'];
+        echo '<br />';
+        echo 'Notícia: '.$info[$i]['conteudo'];
+        echo '<hr>';
+    }   
 ?>
 
-- para manipular informçãos específicas:
+- como puxar a categoria e depois a notícia dessa categoria:
 <?php
     $pdo = new PDO('mysql:host=localhost;dbname=nomedapastacomosarquivosdeBD','root','');
-    $sql = $pdo->prepare("SELECT * FROM posts");
-    $sql->execute()
+    $sql = $pdo->prepare("SELECT * FROM posts WHERE categorias_id = ?"); 
+    //tmb pode ser feito direcionando um id específico
+    //e tmb puxar diretamente no caminho URL (caso seja id específico):
+    // caminhoprojeto/index.php?categorias_id=2
+    $sql->execute(array($_GET['categoria_id']));
     $info = $sql->fetchAll();
 
-    echo '<pre>';
-    print_r($info);
-    echo '</pre>';
-    //mostra no localhost tds as informações (apenas uma prévia)
+    foreach ($info as $key => $value){
+        echo 'Título: '.$value['titulo'];
+        echo '<br />';
+        echo 'Notícia: '.$value['conteudo'];
+        echo '<hr>';
+    }
+
+    //dinâmica completa:
+
+    $sql = $pdo->prepare("SELECT * FROM categorias"); 
+    $sql->execute();
+    $info = $sql->fetchAll();
+
+    foreach ($info as $key => $value){
+        $categoria_id = $value['id'];
+        echo 'Exibindo posts de: '.$value['nome'];
+        echo '<br />';
+        $sql = $pdo->prepare("SELECT * FROM posts WHERE categoria_id = $categoria_id");
+        $sql->execute();
+        $infoPosts = $sql->fetchAll();
+        foreach ($infoPosts as $key => $value){
+            echo 'Título: '.$value['titulo'];
+            echo '<br />';
+            echo 'Notícia: '.$value['conteudo'];
+            echo '<hr>';
+        }
+    }
 ?>
