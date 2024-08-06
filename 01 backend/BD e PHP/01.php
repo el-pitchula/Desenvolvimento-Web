@@ -13,7 +13,10 @@
     //se não aparecer nenhuma mensagem ele está funcionando
 ?>
 
-- Insert PDO (para inserir)
+----- condições nas queries INSERT, UPDATE, DELETE e SELECT -----
+- são as queries mais comuns: inserir, atualizar, deletar e selecionar
+
+----- INSERT (para inserir/criar um novo registro)
     - sobre a importação do BD
 <?php
     $pdo = new PDO('mysql:host=localhost;dbname=nomedapastacomosarquivosdeBD','root','');
@@ -58,6 +61,7 @@
 
 - quando os dados forem inseridos no localhost será guardado no BD
 
------ UPDATE e condições nas queries -----
+----- UPDATE (para atualizar um registro já inserido no BD)
+<?php
 
-
+?>
