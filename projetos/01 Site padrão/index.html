@@ -11,6 +11,7 @@
 
 <body>
     <header>
+        <div class="center">
         <div class="logo">Logomarca</div>
         <nav class="desktop">
             <ul>
@@ -28,19 +29,23 @@
                 <li><a href="">Contato</a></li>
             </ul>
         </nav>
+        </div>
     </header>
 
     <section class="banner-principal">
+        <div class="center">
         <form>
             <h2>Qual seu melhor e-mail?</h2>
             <input type="email" name="email" required>
             <input type="submit" name="acao" value="Cadastrar!">
         </form>
+        </div>
     </section>
 
-    <section>
-        <div class="descricao-autor">
-            <h2>Autor</h2>
+    <section class="descricao-autor">
+        <div class="center">
+        <div class="w50"> <!-- pega 50% da largura da tela -->
+            <h2>Jay</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 Nunc vel euismod justo. Pellentesque vitae odio at orci 
                 fringilla pretium. Pellentesque finibus ex id nisl finibus, 
@@ -68,6 +73,83 @@
                 quis libero egestas varius. Praesent egestas maximus tortor, 
                 id rhoncus nibh tincidunt vitae.</p>
         </div>
+        </div>
+
+        <div class="w50">
+            <img src="img/mordecai.png">
+        </div>
     </section>
+
+    <section class="especialidades">
+        <div class="center">
+        <h2 class="title">Especialidades</h2>
+            <div class="box-especialidade">
+                <h3>icon1</h3>
+                <h3>CSS3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Nunc vel euismod justo. Pellentesque vitae odio at orci 
+                    fringilla pretium.</p>
+            </div>
+            <div class="box-especialidade">
+                <h3>icon2</h3>
+                <h3>HTML5</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Nunc vel euismod justo. Pellentesque vitae odio at orci 
+                    fringilla pretium.</p>
+            </div>
+            <div class="box-especialidade">
+                <h3>icon3</h3>
+                <h3>JS</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Nunc vel euismod justo. Pellentesque vitae odio at orci 
+                    fringilla pretium.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="extras">
+        <div class="center">
+            <div class="w50">
+                <h2 class="title">Coments</h2>
+                <div class="text-single">
+                    <p class="text-descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Nunc vel euismod justo. Pellentesque vitae odio at orci 
+                        fringilla pretium.</p>
+                    <p class="nome-autor">Fulanin1</p>
+                </div>
+                <div class="text-single">
+                    <p class="text-descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Nunc vel euismod justo. Pellentesque vitae odio at orci 
+                        fringilla pretium.</p>
+                    <p class="nome-autor">Fulanin2</p>
+                </div>
+                <div class="text-single">
+                    <p class="text-descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Nunc vel euismod justo. Pellentesque vitae odio at orci 
+                        fringilla pretium.</p>
+                    <p class="nome-autor">Fulanin3</p>
+                </div>
+            </div>
+            <div class="w50">
+                <h2 class="title">Serviços</h2>
+                <div class="servicos">
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Nunc vel euismod justo. Pellentesque vitae odio at orci 
+                            fringilla pretium.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Nunc vel euismod justo. Pellentesque vitae odio at orci 
+                            fringilla pretium.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Nunc vel euismod justo. Pellentesque vitae odio at orci 
+                            fringilla pretium.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+    </footer>
 </body>
 </html>
