@@ -35,7 +35,7 @@
 
 ----- Pesquisa avançada com LIKE
 
------ IN e BETWEEN]
+----- IN e BETWEEN
 
 ----- Having clause
 
